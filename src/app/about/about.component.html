@@ -1,0 +1,33 @@
+<section class="about-section">
+  <div class="container">
+    <div class="text-center">
+      <div class="profile-picture">
+        <img [src]= "vectImage"  (mouseover)="changeImage()" (mouseout)="revImage()"alt="Profile Picture" class="img-fluid rounded-circle shadow ">
+      </div>
+    </div>
+    <div class="about-content">
+      <h2 class="about-heading text-center dc">Hi, I'm Garvit Chawla</h2>
+      <p class="about-description text-center c">
+        I'm a passionate and creative web developer based in New Delhi. I have a strong background in front-end and back-end web development,
+        and I'm constantly learning and exploring new technologies to enhance my skills. My journey in web development began several years ago
+        when I built my first website. Since then, I've been captivated by the endless possibilities of the web and the power it has to connect people globally.
+      </p>
+      <br>
+      <br>
+      <div class="project-cards"><h1> My Projects </h1>
+        <div class="project-card" *ngFor="let project of projects">
+          <div class="project-image">
+            <img [src]="project.imageUrl" alt="Project Image" class="img-fluid">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">{{ project.title }}</h3>
+            <p class="project-description">{{ project.description }}</p>
+            <ul class="project-skills">
+              <li *ngFor="let skill of project.skills">{{ skill }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

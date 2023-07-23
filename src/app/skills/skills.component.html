@@ -1,0 +1,25 @@
+<section class="skills-section">
+    <div class="container">
+      <h2 class="text-center gr">My Skills</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card-deck">
+            <div class="card skill-card" *ngFor="let skill of skills">
+              <img class="card-img-top" [src]="skill.logo" alt="{{ skill.name }} Logo">
+              <div class="card-body">
+                <h5 class="card-title">{{ skill.name }}</h5>
+                <div class="progress-container">
+                  <div class="progress-bar" [style.width.%]="skill.progress">
+                    <span class="progress-value">{{ skill.progress }}%</span>
+                  </div>
+                </div>
+                <p class="card-text">{{ skill.description }}</p>
+                <a class="btn btn-primary" href="{{ skill.documentationLink }}" target="_blank">Official Documentation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

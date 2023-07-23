@@ -1,0 +1,27 @@
+
+
+.footer {
+  color: #fff;
+  text-align: center;
+}
+
+.footer h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: #007bff;
+}
